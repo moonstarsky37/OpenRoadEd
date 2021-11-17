@@ -14,6 +14,7 @@ This fork was adapted to compile on modern Linux operating systems by Hermann HÃ
 
 ```
 sudo apt install git cmake g++ libopenscenegraph-dev qt5-default
+sudo apt-get install -y openscenegraph 
 ```
 
 #### Build osgQt
@@ -40,7 +41,9 @@ git clone https://github.com/fhwedel-hoe/OpenRoadEd.git
 mkdir OpenRoadEd/OpenRoadEd/build
 cd OpenRoadEd/OpenRoadEd/build
 cmake ..
-make
+make -j8
+cp ../../Resources .
+./OpenRoadEd # execute the GUI
 ```
 
 ### Windows 10
